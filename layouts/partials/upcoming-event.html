@@ -1,0 +1,40 @@
+<div class="upcoming-event row justify-content-md-start">
+    {{ range .items }}
+    <div class="event-item col-lg-4">
+        
+        <div class="event-container">
+            <div class="info">
+                {{ if .Params.categories }}
+                {{ $type_of_art := index .Params.categories 0 }}
+                {{ if eq $type_of_art "visual_art" }}
+                    {{ $type_of_art := .Language.Params.tag_visual_art }}
+                <div class="type">{{ $type_of_art }}</div>
+                {{ else if eq $type_of_art "public_art" }}
+                    {{ $type_of_art := .Language.Params.tag_public_art }}
+                <div class="type">{{ $type_of_art }}</div>
+                {{ else if eq $type_of_art "performing_art" }}
+                    {{ $type_of_art := .Language.Params.tag_performing_art }}
+                <div class="type">{{ $type_of_art }}</div>
+                {{ else if eq $type_of_art "film_art" }}
+                    {{ $type_of_art := .Language.Params.tag_film_art }}
+                <div class="type">{{ $type_of_art }}</div>
+                {{ else if eq $type_of_art "ai_music" }}
+                    {{ $type_of_art := .Language.Params.tag_ai_music }}
+                <div class="type">{{ $type_of_art }}</div>
+
+                {{ end }}
+                {{ end }}
+                <div class="date">{{ .Params.start_date | strings.TrimLeft "'" | strings.TrimRight "'"  }}</div>
+            </div>
+            <div class="pic" style="background-image: url('{{ .Params.cover }}');"></div>
+            <div class="title">{{ .Params.title }}</div>
+            <div class="slash"></div>
+            <div class="sub-title">{{ .Params.subtitle }}</div>
+            <div class="text">{{ .Content }}</div>
+            <a href="{{ .Permalink }}">
+                <div class="more">查看更多</div>
+            </a>
+        </div>
+    </div>
+    {{ end }}
+</div>

@@ -1,0 +1,113 @@
+[[main]]
+identifier = "about"
+name = "關於我們"
+url = "/about/"
+weight = 10
+
+[[main]]
+identifier = "history"
+name = "中心簡史"
+url = "/about/history/"
+parent = "about"
+weight = 20
+
+[[main]]
+identifier = "activity"
+name = "活動概述"
+url = "/about/activity/"
+parent = "about"
+weight = 30
+
+[[main]]
+identifier = "faculty"
+name = "組織人員"
+url = "/about/faculty/"
+parent = "about"
+weight = 40
+
+[[main]]
+identifier = "place"
+name = "展演場地"
+url = "/about/place/zyxel/"
+parent = "about"
+weight = 50
+
+[[main]]
+identifier = "collect_music"
+name = "清華樂集"
+url = "/about/collect/music/"
+parent = "about"
+weight = 60
+
+[[main]]
+identifier = "collect_art"
+name = "清華藝集"
+url = "/about/collect/art/"
+parent = "about"
+weight = 70
+
+[[main]]
+identifier = "programs"
+name = "展演節目"
+url = "/exhibitions/"
+weight = 100
+
+[[main]]
+identifier = "public_art"
+name = "公共藝術"
+url = "/categories/public_art/"
+weight = 110
+parent = "programs"
+
+[[main]]
+identifier = "visual_art"
+name = "視覺藝術"
+url = "/categories/visual_art/"
+weight = 120
+parent = "programs"
+
+[[main]]
+identifier = "performing_art"
+name = "表演藝術"
+url = "/categories/performing_art/"
+weight = 130
+parent = "programs"
+
+[[main]]
+identifier = "film_art"
+name = "電影藝術"
+url = "/categories/film_art/"
+weight = 140
+parent = "programs"
+
+[[main]]
+identifier = "ai_music"
+name = "AI樂團"
+url = "/categories/ai_music/"
+weight = 150
+parent = "programs"
+
+#
+#[[main]]
+#identifier = "publication"
+#name = "出版典藏"
+#url = "/publications/"
+#weight = 200
+
+[[main]]
+identifier = "posts"
+name = "專欄文章"
+url = "/posts/"
+weight = 170
+
+[[main]]
+identifier = "friends"
+name = "清藝之友"
+url = "/friends/"
+weight = 210
+
+[[main]]
+identifier = "calendar"
+name = "活動月曆"
+url = "/calendar/"
+weight = 220
