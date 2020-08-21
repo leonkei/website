@@ -1,70 +1,70 @@
 backend:
   name: git-gateway
   #name: github
-  #repo: nthu-artscenter/website
+  #repo: arts-nthu/website
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
   - name: "exhibition" # Used in routes, e.g., /admin/collections/blog
-    label: "Exhibition" # Used in the UI
+    label: "展覽" # Used in the UI
     folder: "content/zh-tw/exhibitions" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{start_date}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "cover", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - label: "Categories"
+      - { label: "標題", name: "title", widget: "string" }
+      - { label: "封面圖片", name: "cover", widget: "string" }
+      - { label: "發佈日期", name: "date", widget: "datetime" }
+      - label: "類型"
         name: "categories"
         widget: "select"
         multiple: true
         options: ["visual_art", "public_art", "performing_art", "film_art", "ai_music"]
-      - label: "Host"
+      - label: "主辦單位"
         name: "host"
         widget: "string"
         default: "清華大學藝術中心"
         required: false 
-      - label: "Performer"
+      - label: "表演者"
         name: "performer"
         widget: "string"
         required: false
-      - label: "Location"
+      - label: "地點"
         name: "location"
         widget: "string"
         required: false
-      - label: "Start Date"
+      - label: "開始日期"
         name: "start_date"
         widget: "datetime"
         format: "'YYYY-MM-DD'"
         dateFormat: "YYYY-MM-DD"
         timeFormat: false
-      - label: "End Date"
+      - label: "結束日期"
         name: "end_date"
         widget: "datetime"
         format: "'YYYY-MM-DD'"
         dateFormat: "YYYY-MM-DD"
         timeFormat: false
-      - label: "Daily Start Time"
+      - label: "開始時間"
         name: "daily_start_time"
         widget: "datetime"
         format: "'HH:mm'"
         dateFormat: "HH:mm"
         required: false
-      - label: "Daily End Time"
+      - label: "結束時間"
         name: "daily_end_time"
         widget: "datetime"
         format: "'HH:mm'"
         dateFormat: "HH:mm"
         required: false
-      - label: "Ticket Info"
+      - label: "票務資訊"
         name: "ticket_info"
         widget: "string"
         required: false
         default: ''
-      - label: "Registration Link"
+      - label: "註冊連結"
         name: "registration_link"
         required: false
         default: ''
 
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "內容", name: "body", widget: "markdown" }
