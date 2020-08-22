@@ -25,6 +25,7 @@ collections:
         name: "tags"
         widget: "select"
         multiple: true
+        options: []
       - { label: "草稿", name: "draft", widget: "boolean", default: false }
       - { label: "內容", name: "body", widget: "markdown" }
   - name: "exhibition" # Used in routes, e.g., /admin/collections/blog
