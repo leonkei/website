@@ -6,6 +6,27 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
+  - name: "index"
+    label: "封面輪播"
+    folder: "content/zh-tw/_index.md"
+    create: false
+    fields:
+      - { label: "內容", name: "body", widget: "markdown" }
+  - name: "post"
+    label: "專欄"
+    folder: "content/zh-tw/posts"
+    create: true
+    slug: "{{start_date}}-{{slug}}"
+    fields:
+      - { label: "標題", name: "title", widget: "string" }
+      - { label: "封面圖片", name: "cover", widget: "string" }
+      - { label: "發佈日期", name: "date", widget: "datetime" }
+      - label: "標籤"
+        name: "tags"
+        widget: "select"
+        multiple: true
+      - { label: "草稿", name: "draft", widget: "boolean", default: false }
+      - { label: "內容", name: "body", widget: "markdown" }
   - name: "exhibition" # Used in routes, e.g., /admin/collections/blog
     label: "展覽" # Used in the UI
     folder: "content/zh-tw/exhibitions" # The path to the folder where the documents are stored
