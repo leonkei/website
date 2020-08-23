@@ -1,7 +1,8 @@
 <div class="latest-news">
     {{ range .items }}
+    {{ if eq .Params.draft false }}
     <div class="information" data-toggle="modal" data-target="#{{ .Params.title }}">
-        <div class="information-start-date">{{ .Params.start_date }}</div>
+        <div class="information-start-date">{{ .Params.start_date | strings.TrimLeft "'" | strings.TrimRight "'" }}</div>
         <div class="information-title">{{ .Params.title }}</div>
         <i class="material-icons" style="margin-left: 5px">slideshow</i>
 
@@ -24,6 +25,7 @@
           </div>
         </div>
     </div>
+    {{ end }}
     {{ end }}
     
 </div>
