@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div>
 
-    {{ partial "carousel" (dict "items" .Params.items ) }}
+    {{ partial "carousel" (dict "items" .Site.Data.carousel.home ) }}
     <div class="_container">
         <div style="position: relative;">
             <div class="page-title">

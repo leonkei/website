@@ -9,8 +9,20 @@ collections:
   - label: "資料"
     name: "data"
     files:
-      - label: "首頁輪播"
+      - label: "輪播"
         name: "carousel"
+        file: "data/faculty.toml"
+        fields:
+          - label: "首頁輪播"
+            name: home
+            widget: list
+            fields:
+              - { label: "標題", name: title, widget: string}
+              - { label: "副標題", name: subtitle, widget: string}
+              - { label: "圖片", name: image, widget: string}
+
+      - label: "成員介紹"
+        name: "faculty"
         file: "data/faculty.toml"
         fields:
           - label: "成員"
