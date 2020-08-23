@@ -44,7 +44,7 @@ collections:
     slug: "{{date}}-{{slug}}"
     fields:
       - { label: "標題", name: title, widget: string}
-      - { label: "發佈日期", name: "date", widget: "datetime" }
+      - { label: "發佈日期", name: "date", widget: "hidden" }
       - { label: "草稿", name: "draft", widget: "boolean", default: false }
       - label: "開始日期"
         name: "start_date"
@@ -67,7 +67,7 @@ collections:
     fields:
       - { label: "標題", name: "title", widget: "string" }
       - { label: "封面圖片", name: "cover", widget: "string" }
-      - { label: "發佈日期", name: "date", widget: "datetime" }
+      - { label: "發佈日期", name: "date", widget: "hidden" }
       - label: "標籤"
         name: "tags"
         widget: "list"
@@ -87,7 +87,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "標題", name: "title", widget: "string" }
       - { label: "封面圖片", name: "cover", widget: "string" }
-      - { label: "發佈日期", name: "date", widget: "datetime" }
+      - { label: "發佈日期", name: "date", widget: "hidden" }
       - label: "類型"
         name: "categories"
         widget: "select"
