@@ -8,7 +8,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 collections:
   - name: "index"
     label: "封面輪播"
-    file: "content/zh-tw/_index.md"
+    files: "content/zh-tw/_index.md"
     create: false
     fields:
       - label: 封面
