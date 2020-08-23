@@ -6,18 +6,23 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: "index"
-    label: "封面輪播"
-    files: "content/zh-tw/_index.md"
-    create: false
-    fields:
-      - label: 封面
-        name: items
-        widget: 'object'
+  - label: "資料"
+    name: "data"
+    files:
+      - label: "首頁輪播"
+        name: "carousel"
+        file: "data/faculty.toml"
         fields:
-          - { label: 標題, name: title, widget: string }
-          - { label: 副標題, name: subtitle, widget: string }
-          - { label: 圖片, name: image, widget: string }
+          - label: "成員"
+            name: curator
+            widget: list
+            fields:
+              - {label: "姓名", name: name, widget: string}
+              - {label: "英文姓名", name: en_name, widget: string}
+              - {label: "職稱", name: title, widget: string}
+              - {label: "英文職稱", name: en_title, widget: string}
+              - {label: "學歷", name: education, widget: string}
+              - {label: "英文學歷", name: en_education, widget: string}
 
   - name: "post"
     label: "專欄"
