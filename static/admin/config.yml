@@ -63,6 +63,10 @@ collections:
     create: true
     summary: "{{start_date}}-{{slug}}"
     sortableFields: ['start_date', 'title']
+    view_filters:
+      - label: 'Posts published in 2020'
+        field: date
+        pattern: '2020'
     slug: "{{start_date}}-{{slug}}"
     fields:
       - { label: "標題", name: "title", widget: "string" }
