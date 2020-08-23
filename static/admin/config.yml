@@ -39,6 +39,7 @@ collections:
     label: "消息"
     folder: "content/zh-tw/news"
     create: true
+    summary: "{{start_date}}-{{slug}}"
     slug: "{{date}}-{{slug}}"
     fields:
       - { label: "標題", name: title, widget: string}
@@ -54,11 +55,12 @@ collections:
         name: "categories"
         widget: "select"
         multiple: true
-        options: []
+        options: ["news"]
   - name: "post"
     label: "專欄"
     folder: "content/zh-tw/posts"
     create: true
+    summary: "{{start_date}}-{{slug}}"
     slug: "{{start_date}}-{{slug}}"
     fields:
       - { label: "標題", name: "title", widget: "string" }
@@ -75,6 +77,7 @@ collections:
     label: "展覽" # Used in the UI
     folder: "content/zh-tw/exhibitions" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    summary: "{{start_date}}-{{slug}}"
     slug: "{{start_date}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "標題", name: "title", widget: "string" }
