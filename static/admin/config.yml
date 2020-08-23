@@ -11,7 +11,7 @@ collections:
     files:
       - label: "輪播"
         name: "carousel"
-        file: "data/faculty.toml"
+        file: "data/carousel.toml"
         fields:
           - label: "首頁輪播"
             name: home
