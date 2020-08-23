@@ -57,16 +57,13 @@ collections:
         widget: "select"
         multiple: true
         options: ["news"]
+      - { label: "內容", name: "body", widget: "markdown" }
   - name: "post"
     label: "專欄"
     folder: "content/zh-tw/posts"
     create: true
     summary: "{{start_date}}-{{slug}}"
     sortableFields: ['start_date', 'title']
-    view_filters:
-      - label: 'Posts published in 2020'
-        field: date
-        pattern: '2020'
     slug: "{{start_date}}-{{slug}}"
     fields:
       - { label: "標題", name: "title", widget: "string" }
@@ -85,6 +82,10 @@ collections:
     create: true # Allow users to create new documents in this collection
     summary: "{{start_date}}-{{slug}}"
     sortableFields: ['start_date', 'title']
+    view_filters:
+      - label: '2020年的展覽'
+        field: start_date
+        pattern: '2020'
     slug: "{{start_date}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "標題", name: "title", widget: "string" }
