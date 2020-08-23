@@ -54,9 +54,8 @@ collections:
         timeFormat: false
       - label: "類型"
         name: "categories"
-        widget: "select"
-        multiple: true
-        options: ["news"]
+        widget: "list"
+        default: ["news"]
       - { label: "內容", name: "body", widget: "markdown" }
   - name: "post"
     label: "專欄"
@@ -71,9 +70,7 @@ collections:
       - { label: "發佈日期", name: "date", widget: "datetime" }
       - label: "標籤"
         name: "tags"
-        widget: "select"
-        multiple: true
-        options: []
+        widget: "list"
       - { label: "草稿", name: "draft", widget: "boolean", default: false }
       - { label: "內容", name: "body", widget: "markdown" }
   - name: "exhibition" # Used in routes, e.g., /admin/collections/blog
@@ -94,7 +91,6 @@ collections:
       - label: "類型"
         name: "categories"
         widget: "select"
-        multiple: true
         options: ["visual_art", "public_art", "performing_art", "film_art", "ai_music"]
       - label: "主辦單位"
         name: "host"
