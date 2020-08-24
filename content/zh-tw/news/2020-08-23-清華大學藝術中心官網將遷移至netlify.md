@@ -1,6 +1,6 @@
 ---
 title: 清華大學藝術中心官網將遷移至netlify
-draft: false
+draft: true
 start_date: "'2020-08-23'"
 categories:
   - news
