@@ -1,6 +1,5 @@
 {{ define "main" }}
 <div>
-
     {{ partial "carousel" (dict "items" .Site.Data.carousel.home ) }}
     <div class="_container">
         <div style="position: relative;">
@@ -13,7 +12,8 @@
             </div>
         </div>
         <!-- Latest News Components-->
-        {{partial "latest-news" (dict "items"  .Site.Taxonomies.categories.news)}}
+        {{ $news := first 6 (sort (where .Site.RegularPages "Section" "in" (slice "news")) ".Params.start_date" "desc") }}
+        {{ partial "latest-news" (dict "items" $news)}}
 
         <div class="upcoming-event" style="position: relative;">
             <div class="page-title">
