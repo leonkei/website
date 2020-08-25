@@ -8,8 +8,8 @@
             </div>
         </div>
         <h5>發文日期:       {{ dateFormat "2006-01-02" .Date }}</h5>
-        <div style="display: flex;">
-        <h5>標籤：</h5>
+        <div style="display: inline-flex;">
+        <h5 style="margin: auto">標籤：</h5>
         {{ range .Params.tags }}
             <button class="btn btn-outline-warning btn-sm">{{ . }}</button>
         {{ end }}
