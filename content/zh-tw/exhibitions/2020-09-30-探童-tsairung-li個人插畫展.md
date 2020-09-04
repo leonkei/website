@@ -1,7 +1,9 @@
 ---
 title: 探童 | TsaiRung Li個人插畫展
 cover: https://i.imgur.com/P3GqYnoh.jpg
-categories: visual_art
+categories:
+  - visual_art
+  - 2020fall
 host: 清華大學藝術中心
 performer: TsaiRung Li
 location: 藝術工坊

@@ -17,9 +17,9 @@ collections:
             name: home
             widget: list
             fields:
-              - { label: "標題", name: title, widget: string}
-              - { label: "副標題", name: subtitle, widget: string}
-              - { label: "圖片", name: image, widget: string}
+              - { label: "標題", name: title, widget: string }
+              - { label: "副標題", name: subtitle, widget: string, required: false }
+              - { label: "圖片", name: image, widget: string }
 
       - label: "成員介紹"
         name: "faculty"
@@ -80,9 +80,33 @@ collections:
     summary: "{{start_date}}-{{slug}}"
     sortableFields: ['start_date', 'title']
     view_filters:
+      - label: '2022年的展覽'
+        field: start_date
+        pattern: '2022'
+      - label: '2021年的展覽'
+        field: start_date
+        pattern: '2021'
       - label: '2020年的展覽'
         field: start_date
         pattern: '2020'
+      - label: '2019年的展覽'
+        field: start_date
+        pattern: '2019'
+      - label: '2018年的展覽'
+        field: start_date
+        pattern: '2018'
+      - label: '2017年的展覽'
+        field: start_date
+        pattern: '2017'
+      - label: '2016年的展覽'
+        field: start_date
+        pattern: '2016'
+      - label: '2015年的展覽'
+        field: start_date
+        pattern: '2015'
+      - label: '2014年的展覽'
+        field: start_date
+        pattern: '2014'
     slug: "{{start_date}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "標題", name: "title", widget: "string" }
@@ -91,7 +115,14 @@ collections:
       - label: "類型"
         name: "categories"
         widget: "select"
-        options: ["visual_art", "public_art", "performing_art", "film_art", "ai_music"]
+        multiple: true
+        options:
+          - { label: "視覺藝術", value: "visual_art" }
+          - { label: "表演藝術", value: "performming_art" }
+          - { label: "公共藝術", value: "public_art" }
+          - { label: "電影藝術", value: "film_art" }
+          - { label: "AI樂團", value: "ai_music" }
+
       - label: "主辦單位"
         name: "host"
         widget: "string"
@@ -117,6 +148,7 @@ collections:
         name: "daily_start_time"
         widget: "string"
         pattern: ['\d\d:\d\d', "HH:mm"]
+        required: false
       - label: "結束時間"
         name: "daily_end_time"
         widget: "string"
