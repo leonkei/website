@@ -108,19 +108,19 @@ collections:
       - label: "開始日期"
         name: "start_date"
         widget: "string"
-        format: "\d\d\d\d-\d\d-\d\d"
+        pattern: ['\d\d\d\d-\d\d-\d\d', "YYYY-MM-DD"]
       - label: "結束日期"
         name: "end_date"
-        widget: "datetime"
-        format: "\d\d\d\d-\d\d-\d\d"
+        widget: "string"
+        pattern: ['\d\d\d\d-\d\d-\d\d', "YYYY-MM-DD"]
       - label: "開始時間"
         name: "daily_start_time"
-        widget: "datetime"
-        format: "\d\d:\d\d"
+        widget: "string"
+        pattern: ['\d\d:\d\d', "HH:mm"]
       - label: "結束時間"
         name: "daily_end_time"
-        widget: "datetime"
-        format: "\d\d:\d\d"
+        widget: "string"
+        pattern: ['\d\d:\d\d', "HH:mm"]
       - label: "票務資訊"
         name: "ticket_info"
         widget: "string"
