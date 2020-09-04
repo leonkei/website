@@ -3,21 +3,3 @@ title = "應材"
 image = "https://i.imgur.com/8WjZ6jT.jpg"
 subtitle = "應材"
 draft = false
-
-[[home]]
-title = "台灣應用材料文藝季"
-subtitle = "台灣應用材料文藝季"
-image = "https://i.imgur.com/A98JnTo.jpg"
-draft = true
-
-[[home]]
-title = "國立清華大學藝術與設計學系教授聯展"
-subtitle = "國立清華大學藝術與設計學系教授聯展"
-image = "https://i.imgur.com/Trl20eb.png"
-draft = true
-
-[[home]]
-title = "王鼎元個展"
-subtitle = "王鼎元個展"
-image = "https://i.imgur.com/q6cVMH5.png"
-draft = true

@@ -1,13 +1,15 @@
 <div id="index-carousel" class="carousel slide" data-ride="carousel" style="height: 500px">
     <div class="carousel-inner" style="height: 100%;">
 
-        {{ range $index, $slide := .items }} }}
+        {{ range $index, $slide := .items }}
+        
         <div class="carousel-item {{ if eq $index 0 }} active {{ end }}" style="height: 100%; width: 100%; color: white">
             <img src="{{ .image }}" class="w-100" alt="..." >
             <div class="carousel-caption d-none d-md-block">
                 
             </div>
         </div>
+       
         {{ end }}
     </div>
     <a class="carousel-control-prev" href="#index-carousel" role="button" data-slide="prev" style="height: 500px">
