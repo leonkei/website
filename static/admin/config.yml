@@ -49,7 +49,7 @@ collections:
       - label: "開始日期"
         name: "start_date"
         widget: "datetime"
-        format: "'YYYY-MM-DD'"
+        format: "YYYY-MM-DD"
         dateFormat: "YYYY-MM-DD"
         timeFormat: false
       - label: "類型"
@@ -107,36 +107,28 @@ collections:
         required: false
       - label: "開始日期"
         name: "start_date"
-        widget: "datetime"
-        format: "'YYYY-MM-DD'"
-        dateFormat: "YYYY-MM-DD"
-        timeFormat: false
+        widget: "string"
+        format: "\d\d\d\d-\d\d-\d\d"
       - label: "結束日期"
         name: "end_date"
         widget: "datetime"
-        format: "'YYYY-MM-DD'"
-        dateFormat: "YYYY-MM-DD"
-        timeFormat: false
+        format: "\d\d\d\d-\d\d-\d\d"
       - label: "開始時間"
         name: "daily_start_time"
         widget: "datetime"
-        format: "'HH:mm'"
-        dateFormat: "HH:mm"
-        required: false
+        format: "\d\d:\d\d"
       - label: "結束時間"
         name: "daily_end_time"
         widget: "datetime"
-        format: "'HH:mm'"
-        dateFormat: "HH:mm"
-        required: false
+        format: "\d\d:\d\d"
       - label: "票務資訊"
         name: "ticket_info"
         widget: "string"
         required: false
-        default: ''
+        default: ""
       - label: "註冊連結"
         name: "registration_link"
         required: false
-        default: ''
+        default: ""
 
       - { label: "內容", name: "body", widget: "markdown" }

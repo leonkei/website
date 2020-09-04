@@ -5,8 +5,8 @@ categories: visual_art
 host: 清華大學藝術中心
 performer: TsaiRung Li
 location: 藝術工坊
-start_date: "'2020-09-30'"
-end_date: "'2020-10-21'"
+start_date: "2020-09-30"
+end_date: "2020-10-21"
 daily_start_time: ""
 daily_end_time: ""
 ticket_info: ""

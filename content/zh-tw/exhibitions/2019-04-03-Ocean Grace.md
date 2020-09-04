@@ -4,8 +4,8 @@ categories:
   - visual_art
   - 2019spring
 cover: https://i.imgur.com/QiaoQKFh.jpg
-start_date: "'2019-04-03'"
-end_date: "'2019-05-08'"
+start_date: "2019-04-03"
+end_date: "2019-05-08"
 draft: false
 date: 2020-05-20T08:49:47.832Z
 subtitle: 蔡欣蓓2019個展

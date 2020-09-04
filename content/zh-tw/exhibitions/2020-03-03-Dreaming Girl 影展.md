@@ -10,8 +10,8 @@ categories:
 host: 清大藝術中心夜貓子電影院
 performer: null
 location: 禾園咖啡(清大水木書苑店風雲樓一樓)
-start_date: "'2020-03-03'"
-end_date: "'2020-03-28'"
+start_date: "2020-03-03"
+end_date: "2020-03-28"
 daily_start_time: null
 daily_end_time: null
 ticket_info: null

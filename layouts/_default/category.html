@@ -93,7 +93,7 @@
                         <div class="event-card">
                             <div class="link">
                                 <div class="info">
-                                    <div class="date">{{ .Params.start_date | strings.TrimLeft "'" | strings.TrimRight "'"  }}</div>
+                                    <div class="date">{{ .Params.start_date | strings.TrimLeft "" | strings.TrimRight ""  }}</div>
                                     <a href="{{ .RelPermalink }} ">
                                         <div class="img" style="background-image: url('{{ .Params.cover }}');"></div>
                                     </a>

@@ -4,8 +4,8 @@ categories:
   - visual_art
   - 2019fall
 cover: https://i.imgur.com/8zAbOvSh.jpg
-start_date: "'2019-12-02'"
-end_date: "'2019-12-31'"
+start_date: "2019-12-02"
+end_date: "2019-12-31"
 draft: false
 date: 2020-05-20T08:49:47.832Z
 subtitle: 楊偉林個展  Wei Lin Yang  Solo Exhibit

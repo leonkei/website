@@ -3,8 +3,8 @@
     {{ if $index }}, {{ end }}
     {
         "title": "{{ .Title }}",
-        "start": "{{ .Params.start_date | strings.TrimLeft "'" | strings.TrimRight "'" }}",
-        "end": "{{ .Params.end_date | strings.TrimLeft "'" | strings.TrimRight "'" }}"
+        "start": "{{ .Params.start_date | strings.TrimLeft "" | strings.TrimRight "" }}",
+        "end": "{{ .Params.end_date | strings.TrimLeft "" | strings.TrimRight "" }}"
     }
     {{ end }}
 ]

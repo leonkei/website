@@ -29,7 +29,7 @@
                             {{ end }}
                             {{ end }}
                             
-                            <div class="time">{{ .Page.Params.start_date | strings.TrimLeft "'" | strings.TrimRight "'" }} ~ {{ .Page.Params.end_date  | strings.TrimLeft "'" | strings.TrimRight "'"  }}</div>
+                            <div class="time">{{ .Page.Params.start_date | strings.TrimLeft "" | strings.TrimRight "" }} ~ {{ .Page.Params.end_date  | strings.TrimLeft "" | strings.TrimRight ""  }}</div>
                             <div class="title">{{ .Page.Params.title }}</div>
                             <div class="hint">{{ .Page.Params.subtitle }}</div>
                         </div>
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="li">
                                     <div class="_left">{{ .Language.Params.ed_time }}</div>
-                                    <div class="_right">{{ .Page.Params.daily_start_time | strings.TrimLeft "'" | strings.TrimRight "'" }} ~ {{ .Page.Params.daily_end_time | strings.TrimLeft "'" | strings.TrimRight "'" }}</div>
+                                    <div class="_right">{{ .Page.Params.daily_start_time | strings.TrimLeft "" | strings.TrimRight "" }} ~ {{ .Page.Params.daily_end_time | strings.TrimLeft "" | strings.TrimRight "" }}</div>
                                 </div>
                                 <div class="li">
                                     <div class="_left">{{ .Language.Params.ed_location }}</div>
