@@ -30,7 +30,6 @@
         {{/* $exhibitions := first 6 (sort (where .Site.RegularPages "Section" "in" (slice "exhibitions")) ".Params.start_date")  */}}
         {{ $exhibitions :=  where .Site.RegularPages "Section" "in" (slice "exhibitions") }}
         
-        {{ $exhibitions := where $exhibitions (dateFormat (.Params.start_date | strings.TrimLeft "" | strings.TrimRight "") "2006-01-01") "ge" (now.Format "2006-01-01") }}
         {{ $exhibitions := sort $exhibitions ".Params.start_date" }}
 
         {{partial "upcoming-event" (dict "items"  $exhibitions )}}
