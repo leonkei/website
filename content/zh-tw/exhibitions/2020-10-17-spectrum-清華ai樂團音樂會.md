@@ -1,7 +1,9 @@
 ---
 title: Spectrum-清華AI樂團音樂會
 cover: https://i.imgur.com/3I3HC2Vh.jpg
-categories: ai_music
+categories:
+  - ai_music
+  - 2020fall
 host: 清華大學藝術中心
 performer: "清華AI樂團，指揮: 邱君強"
 location: 蘆洲KHS表演廳
