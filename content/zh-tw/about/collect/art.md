@@ -11,7 +11,7 @@ lastmod: "2020-01-28"
     </div>
 </div>
 
-<div class="page-collect">
+<div class="page-collect container-fluid">
 
 <ul class="tab">
     <a href="/about/collect/music/">清華樂集</a>

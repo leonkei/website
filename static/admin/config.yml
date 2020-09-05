@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  #name: git-gateway
+  name: test-repo
   #name: github
   #repo: arts-nthu/website
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
@@ -19,7 +20,6 @@ collections:
             fields:
               - { label: "標題", name: title, widget: string }
               - { label: "副標題", name: subtitle, widget: string, required: false }
-              - { label: "草稿", name: "draft", widget: "boolean", default: false }
               - { label: "圖片", name: image, widget: string }
 
       - label: "成員介紹"
@@ -49,13 +49,12 @@ collections:
       - { label: "草稿", name: "draft", widget: "boolean", default: false }
       - label: "開始日期"
         name: "start_date"
-        widget: "datetime"
-        format: "YYYY-MM-DD"
-        dateFormat: "YYYY-MM-DD"
-        timeFormat: false
+        widget: "string"
+        hint: "日期格式是YYYY-MM-DD"
+        pattern: ['\d\d\d\d-\d\d-\d\d', "YYYY-MM-DD"]
       - label: "類型"
         name: "categories"
-        widget: "list"
+        widget: "hidden"
         default: ["news"]
       - { label: "內容", name: "body", widget: "markdown" }
   - name: "post"
@@ -67,12 +66,18 @@ collections:
     slug: "{{start_date}}-{{slug}}"
     fields:
       - { label: "標題", name: "title", widget: "string" }
-      - { label: "封面圖片", name: "cover", widget: "string" }
+      - { label: "草稿", name: "draft", widget: "boolean", default: false }
+      - label: "封面圖片"
+        name: "cover"
+        widget: "string"
+        hint: "請先上傳至imgur然後複製開頭是https://i.imgur.com/的網址"
+        pattern: ['https://i.imgur.com/', "https://i.imgur.com/"]
       - { label: "發佈日期", name: "date", widget: "hidden" }
       - label: "標籤"
         name: "tags"
         widget: "list"
-      - { label: "草稿", name: "draft", widget: "boolean", default: false }
+        allow_add: true
+        field: { label: "標籤", name: "tag", widget: "string"}
       - { label: "內容", name: "body", widget: "markdown" }
   - name: "exhibition" # Used in routes, e.g., /admin/collections/blog
     label: "展覽" # Used in the UI
@@ -112,19 +117,21 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "標題", name: "title", widget: "string" }
       - { label: "草稿", name: "draft", widget: "boolean", default: false }
-      - { label: "封面圖片", name: "cover", widget: "string" }
+      - label: "封面圖片"
+        name: "cover"
+        widget: "string"
+        hint: "請先上傳至imgur然後複製開頭是https://i.imgur.com/的網址"
+        pattern: ['https://i.imgur.com/', "https://i.imgur.com/"]
       - { label: "發佈日期", name: "date", widget: "hidden" }
-      - label: "類型"
+      - label: "展演類型"
         name: "categories"
         widget: "select"
-        multiple: true
         options:
           - { label: "視覺藝術", value: "visual_art" }
           - { label: "表演藝術", value: "performming_art" }
           - { label: "公共藝術", value: "public_art" }
           - { label: "電影藝術", value: "film_art" }
           - { label: "AI樂團", value: "ai_music" }
-
       - label: "主辦單位"
         name: "host"
         widget: "string"
@@ -141,19 +148,23 @@ collections:
       - label: "開始日期"
         name: "start_date"
         widget: "string"
+        hint: "日期格式是YYYY-MM-DD"
         pattern: ['\d\d\d\d-\d\d-\d\d', "YYYY-MM-DD"]
       - label: "結束日期"
         name: "end_date"
         widget: "string"
+        hint: "日期格式是YYYY-MM-DD"
         pattern: ['\d\d\d\d-\d\d-\d\d', "YYYY-MM-DD"]
       - label: "開始時間"
         name: "daily_start_time"
         widget: "string"
+        hint: "時間格式是HH:mm"
         pattern: ['\d\d:\d\d', "HH:mm"]
         required: false
       - label: "結束時間"
         name: "daily_end_time"
         widget: "string"
+        hint: "時間格式是HH:mm"
         pattern: ['\d\d:\d\d', "HH:mm"]
         required: false
       - label: "票務資訊"

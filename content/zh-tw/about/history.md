@@ -4,7 +4,7 @@ lastmod: 2019-01-28
 translationKey: "about"
 ---
 
-<div class="page-history">
+<div class="page-history container-fluid">
 <div class="page-title">
     <div class="line"></div>
     <div class="page-title-text">

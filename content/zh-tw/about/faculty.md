@@ -3,7 +3,7 @@ title: faculty
 lastmod: 2020-01-28
 ---
 
-<div class="page-faculty _container">
+<div class="page-faculty container-fluid">
     <div class="page-title">
         <div class="line"></div>
         <div class="page-title-text">

@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="_container">
+<div class="_container mb-5">
     <div class="page-title">
         <div class="line"></div>
         <div class="page-title-text">
@@ -9,15 +9,14 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('exhibition-calendar');
+            var calendarEl = document.getElementById('exhibition-calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: [ 'dayGrid' ],
+                events: '{{ .Site.BaseURL }}exhibitions/index.json'
+            });
 
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          plugins: [ 'dayGrid' ],
-          events: '{{ .Site.BaseURL }}exhibitions/index.json'
+          calendar.render();
         });
-
-        calendar.render();
-      });
     </script>
     <div id="exhibition-calendar"></div>
 </div>

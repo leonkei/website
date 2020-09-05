@@ -4,7 +4,7 @@ lastmod: "2020-01-28"
 layout: place
 ---
 
-<div class="page-place">
+<div class="page-place container-fluid">
 
 <ul class="tab">
     <a href="/about/place/zyxel/">合勤演藝廳</a>

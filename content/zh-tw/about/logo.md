@@ -3,7 +3,7 @@ title: logo
 lastmod: 2020-01-28
 ---
 
-<div class="page-logo" style="margin-bottom: 100px">
+<div class="page-logo container-fluid" style="margin-bottom: 100px">
 <div class="page-title">
     <div class="line"></div>
     <div class="page-title-text">
