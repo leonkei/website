@@ -1,6 +1,6 @@
 backend:
-  #name: git-gateway
-  name: test-repo
+  name: git-gateway
+  #name: test-repo
   #name: github
   #repo: arts-nthu/website
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
