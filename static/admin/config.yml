@@ -126,6 +126,7 @@ collections:
       - label: "展演類型"
         name: "categories"
         widget: "select"
+        multiple: true
         options:
           - { label: "視覺藝術", value: "visual_art" }
           - { label: "表演藝術", value: "performming_art" }
