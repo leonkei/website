@@ -1,5 +1,5 @@
 ---
-title: Spectrum-清華AI樂團音樂會
+title: Spectrum-清華A.I.樂團音樂會
 cover: https://i.imgur.com/3I3HC2Vh.jpg
 categories:
   - ai_music

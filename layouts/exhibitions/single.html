@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="li">
                                     <div class="_left">{{ .Language.Params.ed_time }}</div>
-                                    <div class="_right">{{ .Page.Params.daily_start_time | strings.TrimLeft "" | strings.TrimRight "" }} ~ {{ .Page.Params.daily_end_time | strings.TrimLeft "" | strings.TrimRight "" }}</div>
+                                    <div class="_right">{{ .Page.Params.daily_start_time | strings.TrimLeft "" | strings.TrimRight "" }} {{ if .Page.Params.daily_end_time }}~ {{ .Page.Params.daily_end_time | strings.TrimLeft "" | strings.TrimRight "" }} {{end}}</div>
                                 </div>
                                 <div class="li">
                                     <div class="_left">{{ .Language.Params.ed_location }}</div>
@@ -60,10 +60,12 @@
                                     <div class="_left">{{ .Language.Params.ed_ticket_info }}</div>
                                     <div class="_right">{{ .Page.Params.ticket_info }}</div>
                                 </div>
+                                {{ if .Page.Params.registration_link }}
                                 <div class="li">
                                     <div class="_left">{{ .Language.Params.ed_registration_link }}</div>
-                                    <div class="_right">{{ .Page.Params.registration_link }}</div>
+                                    <a class="_right" href="{{ .Page.Params.registration_link }}" target="_blank">按我前往</a>
                                 </div>
+                                {{ end }}
                                 
                             </div>
                         </div>
@@ -83,9 +85,11 @@
                         </div>
                         <div class="right">
                             <div class="content-title"></div>
-                            <div class="content">{{ .Content }}</div>
+                            
                         </div>
+                        
                     </div>
+                    <div class="content">{{ .Content }}</div>
                 </div>
             </div>
         </div>
