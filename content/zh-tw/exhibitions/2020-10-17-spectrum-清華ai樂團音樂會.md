@@ -9,7 +9,7 @@ performer: "清華AI樂團，指揮: 邱君強"
 location: 蘆洲KHS表演廳
 start_date: "2020-10-17"
 end_date: "2020-10-17"
-daily_start_time: "14:30"
+daily_start_time: "19:30"
 daily_end_time: ""
 ticket_info: 索票入場
 registration_link: https://www.surveycake.com/s/W11OB
