@@ -1,33 +1,17 @@
 <div class="latest-news">
     {{ $news := sort .items ".Params.start_date" "desc" }}
-    {{ range .items}}
+    {{ range $index, $page := first 5 .items}}
     {{ if eq .Params.draft false }}
-    <div class="information" data-toggle="modal" data-target="#{{ .Params.title }}">
-        <div class="information-start-date">{{ .Params.start_date | strings.TrimLeft "" | strings.TrimRight "" }}</div>
-        <div class="information-title">{{ .Params.title }}</div>
-        <i class="material-icons" style="margin-left: 5px">slideshow</i>
-
-    </div>
-    <div class="modal fade" id="{{ .Params.title }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content" style="background-color: rgb(0,0,0,0.8)!important;">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">{{ .Params.title }}</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                {{ .Content }}
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-    </div>
-    {{ end }}
-    {{ end }}
+    <a class="information row" href="{{ .RelPermalink }}">
+        <div class="col-2 information-start-date">{{ .Params.start_date | strings.TrimLeft "" | strings.TrimRight "" }}</div>
+        <div class="col-9 information-title">{{ .Params.title }}</div>
+        <div class="col-1"></div>
+        <!--<i class="material-icons" style="margin-left: 5px">slideshow</i>-->
+        
+    </a>
     
+    {{ end }}
+    {{ end }}
+    <a href="/news" class="more-news">更多消息...</a>
 </div>
 
