@@ -26,13 +26,10 @@
         </div>
         <!-- upcoming event -->
         
-
-        {{/* $exhibitions := first 6 (sort (where .Site.RegularPages "Section" "in" (slice "exhibitions")) ".Params.start_date")  */}}
         {{ $exhibitions :=  where .Site.RegularPages "Section" "in" (slice "exhibitions") }}
-        
-        {{ $exhibitions := sort $exhibitions ".Params.start_date" }}
+        {{ $exhibitions = sort $exhibitions ".Params.start_date" }}
 
-        {{partial "upcoming-event" (dict "items"  $exhibitions )}}
+        {{ partial "upcoming-event" (dict "items"  $exhibitions ) }}
         
     </div>
 </div>
