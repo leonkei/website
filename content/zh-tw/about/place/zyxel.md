@@ -58,7 +58,7 @@ layout: place
 
 ### 相關表格
 
-<a class="btn" href="https://drive.google.com/open?id=14WxpRjPavHQkNoZUsKri3xGOZYly9mib">借用申請表</a>
+<a class="btn" href="https://drive.google.com/file/d/1lXw9Snp9b4ar-SuA7h_MgU2-NMeji9sh/view?usp=sharing">借用申請表</a>
 <a class="btn" href="https://drive.google.com/open?id=1lXw9Snp9b4ar-SuA7h_MgU2-NMeji9sh">企劃簡表</a>
 <a class="btn" href="https://drive.google.com/open?id=1D2YDIq0PdLG2AeJaapcSVqRseqB46HJU">切結書</a>
 
