@@ -3,7 +3,7 @@ title: 單格攝影電影創作工作坊Single-frame Filming Workshop
 draft: false
 cover: https://i.imgur.com/S7SUS7ph.jpg
 categories:
-  - performing_art
+  - film_art
 host: 清華大學藝術中心
 performer: 許岑竹 黃邦銓 張若涵
 location: 清大圖書館三樓紅氣球視聽室
