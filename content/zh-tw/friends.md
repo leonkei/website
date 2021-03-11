@@ -39,6 +39,7 @@ title: friends
             </a>
         </div>
     </div>
+    <!--
     <div class="row down">
         <div class="col-md-6">
             <img src="https://i.imgur.com/alVXMmph.jpg" alt="" class="pic">
@@ -59,5 +60,6 @@ title: friends
             </div>
         </div>
     </div>
+    -->
 </div>
 
