@@ -42,7 +42,7 @@ Life Story影展想講的是生命的故事。這些電影的音樂譜寫著一�
 
 05.08 (六) 19:30《幻之光》Maborosi (1995) 110min
 
-05.15 (六) 19:30《兒時的點點滴滴》Only Yesterday (1991) 118min
+05.15 (六) 19:30《八月》The Summer Is Gone (2016) 106min（04.07公告）
 
 05.18 (二) 19:30《坂本龍一：終章》Ryuichi Sakamoto: Coda (2017) 102min
 
