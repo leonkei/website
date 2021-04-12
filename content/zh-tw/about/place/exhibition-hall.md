@@ -40,8 +40,8 @@ layout: place
 
 此外，為充分發揮導覽媒體之利用價值，未來將努力與國內其它大學之藝術中心建立合作關係，相互推薦展覽品（附完整導覽媒體）。
 
-<a href="https://i.imgur.com/iRlkg8vh.jpg" class="btn">查看平面圖一</a>
-<a href="https://i.imgur.com/AAgdoD1h.jpg" class="btn">查看平面圖二</a>
+<a href="https://i.imgur.com/iRlkg8v.jpg" class="btn">查看平面圖一</a>
+<a href="https://i.imgur.com/AAgdoD1.jpg" class="btn">查看平面圖二</a>
 
 ## 開放時間
 

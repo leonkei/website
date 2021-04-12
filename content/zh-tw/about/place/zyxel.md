@@ -49,7 +49,7 @@ layout: place
 7. 外場空間
 8. 後台空間
 
-<a class="btn" href="https://i.imgur.com/49tQndIh.jpg">合勤演藝廳平面圖</a>
+<a class="btn" href="https://i.imgur.com/49tQndI.jpg">合勤演藝廳平面圖</a>
 
 ### 使用與收費標準
 
