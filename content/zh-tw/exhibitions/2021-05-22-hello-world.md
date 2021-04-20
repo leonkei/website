@@ -41,3 +41,7 @@ registration_link: ""
 - AIVA : The Pioneer 人工智慧作品，虛擬樂團演出
 - AIVA : From the New World 人工智慧作品，弦樂演出
 - Yating v.s. Tingkang orchestra work 台灣人工智慧實驗室雅婷與清大王庭康同學合力作曲之管弦樂作品
+
+
+![海報](https://i.imgur.com/fU697Bt.png)
+![邀請卡](https://i.imgur.com/gi6ZboP.jpg)
