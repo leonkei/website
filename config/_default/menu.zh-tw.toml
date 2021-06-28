@@ -87,7 +87,6 @@ url = "/categories/ai_music/"
 weight = 150
 parent = "programs"
 
-#
 #[[main]]
 #identifier = "publication"
 #name = "出版典藏"
@@ -100,11 +99,17 @@ name = "專欄文章"
 url = "/posts/"
 weight = 170
 
+#[[main]]
+#identifier = "friends"
+#name = "清藝之友"
+#url = "/friends/"
+#weight = 210
+
 [[main]]
-identifier = "friends"
-name = "清藝之友"
-url = "/friends/"
-weight = 210
+identifier = "memory"
+name = "藝術季回顧"
+url = "/memory/"
+weight = 190
 
 [[main]]
 identifier = "calendar"

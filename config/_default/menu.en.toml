@@ -96,6 +96,13 @@ url = "/en/friends/"
 weight = 210
 
 [[main]]
+identifier = "memory"
+name = "Memory"
+url = "/en/memory/"
+weight = 190
+
+
+[[main]]
 identifier = "calendar"
 name = "Calendar"
 url = "/en/calendar/"
