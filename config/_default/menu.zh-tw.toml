@@ -107,7 +107,7 @@ weight = 170
 
 [[main]]
 identifier = "memory"
-name = "藝術季回顧"
+name = "展演回顧"
 url = "/memory/"
 weight = 190
 
