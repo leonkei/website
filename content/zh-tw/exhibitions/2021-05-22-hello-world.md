@@ -1,7 +1,7 @@
 ---
 title: Hello, World
 draft: false
-cover: https://i.imgur.com/fU697Bt.png
+cover: https://i.imgur.com/usQyoqvh.png
 categories:
   - ai_music
 host: 清華大學藝術中心
