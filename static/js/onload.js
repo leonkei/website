@@ -70,7 +70,7 @@ $(window).load(function(e){
 	 var h=h_;
 	 var id=id_;
 	 
-	$('body').prepend('<div id="v7_lightbox"><div class="bcg"></div><iframe class="youtube-player" width='+w+' height='+h+' src="http://www.youtube.com/embed/'+id+'?html5=1" frameborder="0" allowfullscreen></iframe></div>');
+	$('body').prepend('<div id="v7_lightbox"><div class="bcg"></div><iframe class="youtube-player" width='+w+' height='+h+' src="https://www.youtube.com/embed/'+id+'?html5=1" frameborder="0" allowfullscreen></iframe></div>');
   
     $(window).trigger('orientationchange');
 	  	
@@ -1603,7 +1603,7 @@ function contact_form() {
 
 
 /*
- * $ Easing v1.3 - http://gsgd.co.uk/sandbox/$/easing/
+ * $ Easing v1.3 - https://gsgd.co.uk/sandbox/$/easing/
  *
  * Uses the built in easing capabilities added In $ 1.1
  * to offer multiple easing options

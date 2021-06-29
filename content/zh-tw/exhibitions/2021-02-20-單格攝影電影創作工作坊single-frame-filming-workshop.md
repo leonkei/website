@@ -41,7 +41,7 @@ registration_link: ""
 卷、生活電影。近年作品有《時光剝落》（2017）、《藥膜連結》（2019）、《窗戶調查報告
 #1》（2019）等。
 
-個人網站: [http://www.hsutchu.com/](http://www.hsutchu.com/)
+個人網站: [https://www.hsutchu.com/](https://www.hsutchu.com/)
 
 ### 黃邦銓｜影像創作者
 

@@ -690,7 +690,7 @@ border-bottom-left-radius: 0px;
 
  /* all icons for flipbook */
 		#fb7 .fb7-nav-arrow,#fb7 .fb7-menu li {
-		   background:url(http://www.preview.flashmaniac.net/jquery_flipbook_v7_wp/wp-content/plugins/jquery_classy_flipbook/flipbook/img/icons.png) no-repeat;
+		   background:url(/img/icons.png) no-repeat;
 	    }
 		
 		#fb7 .fb7-menu li {		
@@ -702,7 +702,7 @@ border-bottom-left-radius: 0px;
 	 	
 	    /* background flipbook */
 		#fb7 .fb7-bcg-book{
-			/*background-image:url(http://www.preview.flashmaniac.net/jquery_flipbook_v7_wp/wp-content/plugins/jquery_classy_flipbook/flipbook/img/bcg.jpg);*/
+			/*background-image:url(https://www.preview.flashmaniac.net/jquery_flipbook_v7_wp/wp-content/plugins/jquery_classy_flipbook/flipbook/img/bcg.jpg);*/
 		}
 		
 		

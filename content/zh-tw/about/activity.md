@@ -48,7 +48,7 @@ block:
 
       夜貓子電影院自2006年成立之初，決定從作者論出發，按導演作品年表選映，呈現導演完整的創作脈絡；此外，亦策劃主題性影展與類型影展，包括科幻影展、林強電影配樂、黃文英影像美術特展等。平均一個月一檔專題影展，邀請導演蒞臨分享，以及舉辦影像創作工作坊。影展創辦已逾十年，我們所選映的電影大部分皆已購入圖書館館藏，藉由影展的推介與館藏資料庫，培養觀眾的觀影品味，推動電影藝術。
 
-      - 部落格：[http://nightcats.blogspot.tw/](http://nightcats.blogspot.tw/)
+      - 部落格：[https://nightcats.blogspot.tw/](https://nightcats.blogspot.tw/)
 
       - 粉絲團：[https://www.facebook.com/NTHUNIGHTCATS/](https://www.facebook.com/NTHUNIGHTCATS/)"
 ---
