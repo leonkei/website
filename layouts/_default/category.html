@@ -89,7 +89,7 @@
                     {{ $pages := sort .Pages ".Params.start_date" "desc" }}
                     {{ $paginator := .Paginate $pages 12 }}
                     {{ range $paginator.Pages }}
-                    <div class="col event-item">
+                    <div class="col-lg-4 col-12 event-item">
                         <div class="event-card">
                             <div class="link">
                                 <div class="info">
