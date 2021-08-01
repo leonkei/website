@@ -31,11 +31,11 @@
     <script src="/js/jquery.address-1.6.min.js"></script>
 	<script src="/js/onload.js"></script>
 
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/pwa/manifest.json">
     <script>
         if('serviceWorker' in navigator) {
             navigator.serviceWorker
-                .register('/sw.js', { scope: '/' })
+                .register('/pwa/sw.js', { scope: '/' })
                 .then(function(registration) {
                     //console.log('Service Worker Registered');
                 });
