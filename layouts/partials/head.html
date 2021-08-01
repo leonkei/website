@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <title>清華大學藝術中心</title>
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
     <!-- full calendar -->
     <script src="https://unpkg.com/@fullcalendar/core@4.4.0/main.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/core@4.4.0/main.css" crossorigin="anonymous">
@@ -31,11 +32,10 @@
     <script src="/js/jquery.address-1.6.min.js"></script>
 	<script src="/js/onload.js"></script>
 
-    <link rel="manifest" href="/pwa/manifest.json">
     <script>
         if('serviceWorker' in navigator) {
             navigator.serviceWorker
-                .register('/pwa/sw.js', { scope: '/' })
+                .register('/sw.js', { scope: '/' })
                 .then(function(registration) {
                     //console.log('Service Worker Registered');
                 });
