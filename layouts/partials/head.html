@@ -30,4 +30,21 @@
     <script src="/js/jquery.fullscreen.js"></script>
     <script src="/js/jquery.address-1.6.min.js"></script>
 	<script src="/js/onload.js"></script>
+
+    <link rel="manifest" href="/manifest.json">
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/sw.js', { scope: '/' })
+                .then(function(registration) {
+                    //console.log('Service Worker Registered');
+                });
+      
+            navigator.serviceWorker
+                .ready
+                .then(function(registration) {
+                    //console.log('Service Worker Ready');
+                });
+        }
+      </script>
 </head>
