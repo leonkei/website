@@ -116,6 +116,7 @@ collections:
     slug: "{{start_date}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "標題", name: "title", widget: "string" }
+      - { label: "副標題", name: "subtitle", widget: "string" }
       - { label: "草稿", name: "draft", widget: "boolean", default: false }
       - label: "封面圖片"
         name: "cover"
